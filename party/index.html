@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .party-list {
+            margin-bottom: 20px;
+        }
+        .party-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .party-item button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .party-item button:hover {
+            background-color: darkred;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Party List</h1>
+
+    <!-- List of parties -->
+    <div class="party-list" id="partyList">
+        <!-- Parties will be listed here -->
+    </div>
+
+    <!-- Form to add a new party -->
+    <h2>Add a New Party</h2>
+    <form id="partyForm">
+        <label for="partyName">Party Name:</label>
+        <input type="text" id="partyName" required>
+
+        <label for="partyDate">Date:</label>
+        <input type="date" id="partyDate" required>
+
+        <label for="partyTime">Time:</label>
+        <input type="time" id="partyTime" required>
+
+        <label for="partyLocation">Location:</label>
+        <input type="text" id="partyLocation" required>
+
+        <label for="partyDescription">Description:</label>
+        <textarea id="partyDescription" required></textarea>
+
+        <button type="submit">Add Party</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
